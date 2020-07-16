@@ -122,7 +122,10 @@ plotData = ggplot(data=weatherData) +
              size=1.2) +
   geom_vline(mapping=aes(xintercept=avg.JulAug),
              color="darkslateblue",
-             size=1.2) 
+             size=1.2) + 
+  #### REmove margins -- added by Charlie
+  scale_x_continuous(expand=c(0,0)) +
+  scale_y_continuous(expand=c(0,0));
 plot(plotData)
 
 
