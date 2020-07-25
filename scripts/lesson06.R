@@ -185,7 +185,7 @@ thePlot = ggplot(data=weatherData) +
                na.rm=TRUE,
                geom = "errorbar",
                width = 0.2) +
-  geom_boxplot(mapping=aes(x=windDirFact, y=changeMaxTemp), 
+  geom_boxplot(mapping=aes(x=windDirFact, y=changeMaxTemp),
                na.rm=TRUE,
                outlier.shape = "@",
                outlier.color = "red",
