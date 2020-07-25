@@ -47,9 +47,3 @@ thePlot = ggplot(data=weatherData) +
        y = "Pressure",
        fill = "Wind Direction")
 plot(thePlot)
-
-
-
-
-
-
