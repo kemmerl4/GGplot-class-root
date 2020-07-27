@@ -1,5 +1,6 @@
 # Application 7
 # 25 July 2020
+#Author: Lindsey Kemmerling
 
 source( file="scripts/reference.R" )
 weatherData = read.csv( file="data/LansingNOAA2016-3.csv", 
