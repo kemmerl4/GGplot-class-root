@@ -55,13 +55,14 @@ thePlot = ggplot(data=weatherData) +
 plot(thePlot)
 
 
-#combine heating and cooling into one column?
-
-
 #Combine Heating and Cooling Days into one barplot
 #plot cooling days vs. month
 thePlot = ggplot(data=weatherData) +
-  geom_col(mapping=aes(x=month, y=coolDays, fill=),
+  geom_col(mapping=aes(x=month, y=coolDays, 
+                       fill="blue"),
+           width=0.6) +
+  geom_col(mapping=aes(x=month, y=heatDays,
+                       fill="red"),
            width=0.6) +
   scale_x_discrete(limits = month.abb) +
   theme_bw() +
