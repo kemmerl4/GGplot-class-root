@@ -1,6 +1,6 @@
 #application 9
 # 5 August 2020
-
+ 
 source( file="scripts/reference.R" ); 
 weatherData = read.csv( file="data/LansingNOAA2016-3.csv", 
                         stringsAsFactors = FALSE )
